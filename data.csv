@@ -1,0 +1,86 @@
+id,name,model,area,year,doi,task,url
+45,Effective Visualization of File System Access-Control,TreeMap,AC
+46,Visual Analysis of Photo Policy Misconfigurations Using Treemap,TreeMap,AC
+47,Access Control Visualization Using Triangular Matrices,Matrix;TreeMap;Tree,AC
+48,On Building a Visualisation Tool for Access Control Policies,TreeMap;Tree,AC
+49,Accessible access control: a visualization system for accessible access control: a visualization system for access control policy management access control policy management,Tree,AC
+50,Acquisition and visualization of sensitive security audit events,Graph,DLP
+51,Визуализация аномальной активности в перемещениях сотрудников критиче-ской инфраструктуры,Chart,DLP
+52,Выявление инсайдеров в корпоративной сети,Graph,DLP
+53,Использование моделей визуализации данных в DLP системах,Chart;Graph,DLP
+54,Practical firewall policy inspection using anomaly detection and its visualization,Matrix;Graph,NET
+55,Visual firewall: Real-time network security monitor,Parallel coordinates,NET
+56,Visual analysis of complex firewall configurations,Tree,NET
+57,Visualizing firewall configurations using created voids,Parallel coordinates,NET
+58,PolicyVis: Firewall Security Policy Visualization and Inspection,Matrix,NET
+59,A visual analytics approach for the cyber forensics based on different views of the network traffic,Parallel coordinates;Chart;Scatter plot,FOR
+60,Change-link 2.0: A digital forensic tool for visualizing changes to shadow volume data,Matrix;Tree;Scatter plot,FOR
+61,Computer forensic timeline visualization tool,Chart,FOR
+62,Visualizing information in digital forensics,Graph;Chart,FOR
+63,Behavioural & tempo-spatial knowledge graph for crime matching through graph theory,Tree,FOR
+64,A term distribution visualization approach to digital forensic string search,Chart,FOR
+67,Alertwheel: Radial bipartite graph visualization applied to intrusion detection system alerts,Graph,NET
+68,Hierarchical Visualization of Network Intrusion Detection Data in the IP Address Space,TreeMap;Graph,NET
+69,SnortView: Visualization system of snort logs,Matrix,NET
+70,A visualization paradigm for network intrusion detection,Chord Diagram,NET
+71,Exploring three-dimensional visualization for intrusion detection,Parallel coordinates;Scatter plot;Chart,NET
+72,A Novel Radial Visualization of Intrusion Detection Alerts,Chord Diagram;Scatter plot,NET
+73,Network-wide intrusion detection supported by multivariate analysis and interactive visualization,Parallel coordinates,NET
+74,A pyramidal-based model to compute the impact of cyber security events,Chart,RISK
+75,Choosing Models for Security Metrics Visualization,Chart;Graph;Matrix,RISK
+76,Selection of countermeasures against network attacks based on dynamical calculation of security metrics,Graph,RISK
+77,Selection of Pareto-efficient response plans based on financial and operational assessments,Graph;Chart;Scatter plot,RISK
+78,Security Risk Analysis of Enterprise Networks Using Probabilistic Attack Graphs,Graph,RISK
+79,Partisanship Propaganda and Disinformation: Online Media and 2016 U.S. Presidential election,Chart;Graph;Scatter plot,SOC
+80,Disinformation and social bot operations in the run up to the 2017 french presidential election,Chart;Matrix,SOC
+81,Junk News on Military Affairs and National Security: Social Media Disinformation Campaigns Against US Military Personnel and Veterans,Chart;Scatter plot,SOC
+82,Investigating Italian disinformation spreading on Twitter in the context of 2019 European elections,Chart;Word cloud;Graph,SOC
+83,The technique of structuring social network graphs for visual analysis of user groups to counter inappropriate dubious and harmful information,Graph,SOC
+84,FakeNewsTracker: a tool for fake news collection detection and visualization,Geographical maps;Graph;Word cloud;Chart,SOC
+85,Appliance of Social Network Analysis and Data Visualization Techniques in Analysis of Information Propagation,Graph,SOC
+86,Visual analysis of CAN bus traffic injection using radial bar charts,Chart,NET
+87,Visual reverse engineering of binary and data files,Matrix,VIR
+88,Visualization techniques for efficient malware detection,Matrix,VIR
+89,Malware images: Visualization and automatic classification,Matrix;Scatter plot,VIR
+90,MalwareVis: Entity-based visualization of malware network traces,Chart,VIR
+91,Visualization of shared system call sequence relationships in large malware corpora,Matrix,VIR
+92,SEEM: A scalable visualization for comparing multiple large sets of attributes for malware analysis,Chart,VIR
+93,Malware behavior image for malware variant identification,Chart,VIR
+94,Visual analytics for detecting anomalous activity in mobile money transfer services,Graph,FOR
+1,J-Viz: Finding algorithmic complexity attacks via graph visualization of Java bytecode,Graph,VIR
+2,ROPMate: Visually Assisting the Creation of ROP-based Exploits,Tree;Scatter plot,VIR
+3,The goods the bads and the uglies: Supporting decisions in malware detection through visual analytics,Geographical maps;HeatMap;Scatter plot,NET
+4,CRUMBS: A cyber security framework browser,TreeMaps,AC
+5,PERCIVAL: proactive and reactive attack and response assessment for cyber incidents using visual analytics,Graph,NET
+6,Uncovering periodic network signals of cyber attacks,Chart,NET
+7,Crush Your Data with ViC 2 ES Then CHISSL Away,Matrix,DLP
+8,Ocelot: user-centered design of a decision support visualization for network quarantine,Tree;Parallel coordinates,NET
+9,CyberPetri at CDX 2016: Real-time network situation awareness,Tree,NET
+10,Cesar: Visual representation of source code vulnerabilities,TreeMaps,VIR
+11,Visualization of actionable knowledge to mitigate DRDoS attacks,Chart,NET
+12,Looking for a black cat in a dark room: Security visualization for cyber-physical system design and analysis,Graph,RISK
+13,Bitconeview: visualization of flows in the bitcoin transaction graph,Chart,FOR
+15,SNAPS: Semantic network traffic analysis through projection and selection,Streamgraph,NET
+16,Understanding the context of network traffic alerts,Matrix;Graph;Chart;HeatMap,NET
+17,Eventpad: Rapid malware analysis and reverse engineering using visual analytics,Matrix;Streamgraph,VIR
+18,User behavior map: Visual exploration for cyber security session data,Geographical maps;HeatMap;Parallel coordinates,NET
+19,An empirical study on perceptually masking privacy in graph visualizations,Graph,SOC
+20,Toward a visualization-supported workflow for cyber alert management using threat models and human-centered design,Scatter plot,NET
+22,V3SPA: A visual analysis exploration and diffing tool for SELinux and SEAndroid security policies,Graph;Matrix,AC
+23,Contextual network navigation to provide situational awareness for network administrators,Tree,NET
+24,Ensemble visualization for cyber situation awareness of network security data,Matrix;Tree;Chart,NET
+25,Firewall ruleset visualization analysis tool based on segmentation,Matrix,AC
+26,Visual Analytics for Root DNS Data,Streamgraph;Scatter plot,NET
+27,Visualizing the insider threat: challenges and tools for identifying malicious user activity,Tree;Streamgraph;Chart;Matrix;Scatter plot;Parallel coordinates,DLP
+28,STARLORD: Linked security data exploration in a 3D graph,Graph,NET
+31,Visualizing a Malware Distribution Network,Graph,VIR
+32,Visually guided flow tracking in software-defined networking,Tree;Parallel coordinates;Scatter plot,NET
+33,Towards designing effective visualizations for DNS-based network threat analysis,Scatter plot,NET
+34,Interactive visualization toolbox to detect sophisticated android malware,Graph,VIR
+36,Detecting malicious logins in enterprise networks using visualization,Graph,NET
+37,Building a Machine Learning Model for the SOC by the Input from the SOC and Analyzing it for the SOC,Chart;Scatter plot;TreeMaps;Matrix,RISK
+38,Bigfoot: A geo-based visualization methodology for detecting BGP threats,Geographical maps,FOR
+40,Visual-Interactive Identification of Anomalous IP-Block Behavior Using Geo-IP Data,Geographical maps;Chart,NET
+42,Discovery of rating fraud with real-time streaming visual analytics,Matrix;Graph,FRA
+43,TAPESTRY: Visualizing Interwoven Identities for Trust Provenance,HeatMap;Chart,NET
+44,Visual analytics for cyber red teaming,Graph;Tree;Parallel coordinates,NET

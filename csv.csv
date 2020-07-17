@@ -1,0 +1,38 @@
+J-Viz: Finding algorithmic complexity attacks via graph visualization of Java bytecode,Graph,VIR
+ROPMate: Visually Assisting the Creation of ROP-based Exploits,Tree;Scatter plot,VIR
+The goods the bads and the uglies: Supporting decisions in malware detection through visual analytics,Geographical maps;HeatMap;Scatter plot,NET
+CRUMBS: A cyber security framework browser,TreeMap,AC
+PERCIVAL: proactive and reactive attack and response assessment for cyber incidents using visual analytics,Graph,NET
+Uncovering periodic network signals of cyber attacks,Chart,NET
+Crush Your Data with ViC 2 ES Then CHISSL Away,Matrix,DLP
+Ocelot: user-centered design of a decision support visualization for network quarantine,Tree;Parallel coordinates,NET
+CyberPetri at CDX 2016: Real-time network situation awareness,Tree,NET
+Cesar: Visual representation of source code vulnerabilities,TreeMap,VIR
+Visualization of actionable knowledge to mitigate DRDoS attacks,Chart,NET
+Looking for a black cat in a dark room: Security visualization for cyber-physical system design and analysis,Graph,RISK
+Bitconeview: visualization of flows in the bitcoin transaction graph,Chart,FOR
+SNAPS: Semantic network traffic analysis through projection and selection,Streamgraph,NET
+Understanding the context of network traffic alerts,Matrix;Graph;Chart;HeatMap,NET
+Eventpad: Rapid malware analysis and reverse engineering using visual analytics,Matrix;Streamgraph,VIR
+User behavior map: Visual exploration for cyber security session data,Geographical maps;HeatMap;Parallel coordinates,NET
+An empirical study on perceptually masking privacy in graph visualizations,Graph,SOC
+Toward a visualization-supported workflow for cyber alert management using threat models and human-centered design,Scatter plot,NET
+V3SPA: A visual analysis exploration and diffing tool for SELinux and SEAndroid security policies,Graph;Matrix,AC
+Contextual network navigation to provide situational awareness for network administrators,Tree,NET
+Ensemble visualization for cyber situation awareness of network security data,Matrix;Tree;Chart,NET
+Firewall ruleset visualization analysis tool based on segmentation,Matrix,AC
+Visual Analytics for Root DNS Data,Streamgraph;Scatter plot,NET
+Visualizing the insider threat: challenges and tools for identifying malicious user activity,Tree;Streamgraph;Chart;Matrix;Scatter plot;Parallel coordinates,DLP
+STARLORD: Linked security data exploration in a 3D graph,Graph,NET
+Visualizing a Malware Distribution Network,Graph,VIR
+Visually guided flow tracking in software-defined networking,Tree;Parallel coordinates;Scatter plot,NET
+Towards designing effective visualizations for DNS-based network threat analysis,Scatter plot,NET
+Interactive visualization toolbox to detect sophisticated android malware,Graph,VIR
+Detecting malicious logins in enterprise networks using visualization,Graph,NET
+Building a Machine Learning Model for the SOC by the Input from the SOC and Analyzing it for the SOC,Chart;Scatter plot;TreeMap;Matrix,RISK
+Bigfoot: A geo-based visualization methodology for detecting BGP threats,Geographical maps,FOR
+Network-wide intrusion detection supported by multivariate analysis and interactive visualization,Chart;Matrix;Parallel coordinates,RISK
+Visual-Interactive Identification of Anomalous IP-Block Behavior Using Geo-IP Data,Geographical maps;Chart,NET
+Discovery of rating fraud with real-time streaming visual analytics,Matrix;Graph,NET
+TAPESTRY: Visualizing Interwoven Identities for Trust Provenance,HeatMap;Chart,NET
+Visual analytics for cyber red teaming,Graph;Tree;Parallel coordinates,NET
