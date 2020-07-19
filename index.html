@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <title>Security visualization map</title>
     <script src="https://d3js.org/d3.v4.min.js"></script>
-    <script src="d3-tip.js"></script>
+    <script src="tip/d3-tip.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
-    <link rel="stylesheet" href="modal.css">
-    <link rel="stylesheet" href="d3-tip.css">
-
-
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="tip/d3-tip.css">
 </head>
 <style>
     .columnLeft {
@@ -29,11 +27,6 @@
         float: right;
         width: 70%;
     }
-
-
-
-
-    /* Clear floats after the columns */
     .row:after {
         content: "";
         display: table;
@@ -47,34 +40,12 @@
         font-size: 10px;
         font-family: Arial;
     }
-
     .brd {
         border: 1px solid black; /* Параметры границы */
-
         padding: 10px; /* Поля вокруг текста */
     }
-
     .panelContent{
         padding-top: 10px;
-    }
-
-    .bubble {
-        background: red;
-        color: white;
-        padding: 4px 12px;
-        position: absolute;
-        border-radius: 4px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .bubble::after {
-        content: "";
-        position: absolute;
-        width: 2px;
-        height: 2px;
-        background: red;
-        top: -1px;
-        left: 50%;
     }
 
 
@@ -87,16 +58,18 @@
 <div style="padding-top: 5px"></div>
 
 <div>
+    <!-- LEFT PANEL -->
     <div class="panel brd">
-        <div class="panelContent"><span>Ключевое слово:</span> <input style="float: right" type="text" id="selectTag" name="tag"></div>
-        <div class="panelContent"><span>Модель:<select id="seletModel" style="float: right"><option>Все</option></select></span></div>
-        <div class="panelContent"><span>Область:<select id="selectArea" style="float: right"><option>Все</option></select></span></div>
-        <div class="panelContent"><span>Задача:<select id="selectTask" style="float: right"><option>Все</option></select></span></div>
+        <!-- NODES FILTERS -->
+        <div class="panelContent"><span>Ключевое слово:</span> <input style="float: right" type="text" id="selecttag" name="tag" onchange="onChange()"></div>
+        <div class="panelContent"><span>Модель:<select id="selectmodel" style="float: right" onchange="onChange()"><option>Все</option></select></span></div>
+        <div class="panelContent"><span>Область:<select id="selectarea" style="float: right" onchange="onChange()"><option>Все</option></select></span></div>
+        <div class="panelContent"><span>Задача:<select id="selecttask" style="float: right" onchange="onChange()"><option>Все</option></select></span></div>
         <div class="panelContent">
             <span>Год:</span>
             <div class="range-wrap"  style="float: right">
                 <div class="range-value" id="rangeV"></div>
-                <input id="range" type="range" min="2000" max="2020" value="2000" step="1">
+                <input id="range" type="range" min="2000" max="2020" value="2000" step="1" onchange="onChange()">
             </div>
             <script>
                 const
@@ -107,34 +80,29 @@
                             newValue = Number( (range.value - range.min) * 100 / (range.max - range.min) ),
                             newPosition = 10 - (newValue * 0.2);
                         rangeV.innerHTML = `<span>${range.value}</span>`;
-                        //rangeV.style.left = `calc(${newValue}% + (${newPosition}px))`;
-                        //rangeV.style.left = `calc(${newValue}% + (${8 - newValue * 0.1}px))`;
                     };
                 document.addEventListener("DOMContentLoaded", setValue);
                 range.addEventListener('input', setValue);
-
             </script>
         </div>
+
+        <!-- LINK FILTERS -->
         <div class="panelContent" style="padding-top: 100px">Показать связи:</div>
-        <input type="checkbox" class="panelContent" id="modelLinks" name="model" checked>
-        <label for="modelLinks">Модель</label>
-        <input type="checkbox" class="panelContent" id="areaLinks" name="area" checked>
-        <label for="areaLinks">Область</label>
+        <input type="checkbox" class="panelContent" id="linksmodel" name="model" onchange="onChange()" checked>
+        <label for="linksmodel">Модель</label>
+        <input type="checkbox" class="panelContent" id="linksarea" name="area" onchange="onChange()" checked>
+        <label for="linksarea">Область</label>
+        <input type="checkbox" class="panelContent" id="linkstask" name="task" onchange="onChange()" checked>
+        <label for="linkstask">Задача</label>
 
-        <input type="checkbox" class="panelContent" id="taskLinks" name="task" checked>
-        <label for="taskLinks">Задача</label>
-
+        <!-- OTHER -->
         <div class="panelContent" style="padding-top: 100px">Для связи: kolomeec@comsec.spb.ru</div>
-
-
-
     </div>
 
+    <!-- RIGHT PANEL -->
     <div class="vis">
-
-
-        <svg></svg>
-
+        <div id="svg"></div>
+        <!-- DETAIL ON DEMAND MODAL-->
         <div id="articleModal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
@@ -157,8 +125,7 @@
         </script>
 
         <script src="vis.js"></script>
-        </div>
-
+    </div>
 </div>
 </body>
 </html>
