@@ -47,40 +47,40 @@ id,name,model,area,year,doi,task,url
 92,SEEM: A scalable visualization for comparing multiple large sets of attributes for malware analysis,Chart,Вирусология,2014,10.1145/2671491.2671496,Анализ метрик вредоносного ПО,https://dl.acm.org/doi/abs/10.1145/2671491.2671496
 93,Malware behavior image for malware variant identification,Chart,Вирусология,2014,10.1109/ISBAST.2014.7013128,Анализ поведения вредоносного ПО,https://ieeexplore.ieee.org/abstract/document/7013128
 94,Visual analytics for detecting anomalous activity in mobile money transfer services,Graph,Криминалистика,2014,10.1007/978-3-319-10975-6_5,Анализ транзакций,https://link.springer.com/chapter/10.1007/978-3-319-10975-6_5
-1,J-Viz: Finding algorithmic complexity attacks via graph visualization of Java bytecode,Graph,Вирусология,-,-,Анализ графа вызова функций,-
-2,ROPMate: Visually Assisting the Creation of ROP-based Exploits,Tree;Scatter plot,Вирусология,-,-,Анализ графа вызова функций|Анализ метрик вредоносного ПО,-
-3,The goods the bads and the uglies: Supporting decisions in malware detection through visual analytics,Geographical maps;HeatMap;Scatter plot,Сетевая безопасность,-,-,Анализ географии атак|Анализ файлов,-
-4,CRUMBS: A cyber security framework browser,TreeMaps,Контроль доступа,-,-,Анализ политик (иерархические),-
-5,PERCIVAL: proactive and reactive attack and response assessment for cyber incidents using visual analytics,Graph,Сетевая безопасность,-,-,Анализ и мониторинг инцидентов в IDS,-
-6,Uncovering periodic network signals of cyber attacks,Chart,Сетевая безопасность,-,-,Анализ трафика сети,-
-7,Crush Your Data with ViC 2 ES Then CHISSL Away,Matrix,Предотвращение утечек,-,-,Анализ активности сотрудника,-
-8,Ocelot: user-centered design of a decision support visualization for network quarantine,Tree;Parallel coordinates,Сетевая безопасность,-,-,Анализ и мониторинг инцидентов в IDS,-
-9,CyberPetri at CDX 2016: Real-time network situation awareness,Tree,Сетевая безопасность,-,-,Анализ и мониторинг инцидентов в IDS,-
-10,Cesar: Visual representation of source code vulnerabilities,TreeMaps,Вирусология,-,-,Анализ уязвимостей,-
-11,Visualization of actionable knowledge to mitigate DRDoS attacks,Chart,Сетевая безопасность,-,-,Анализ трафика сети,-
-12,Looking for a black cat in a dark room: Security visualization for cyber-physical system design and analysis,Graph,Анализ рисков,-,-,Анализ активов,-
-13,Bitconeview: visualization of flows in the bitcoin transaction graph,Chart,Криминалистика,-,-,Анализ транзакций,-
-15,SNAPS: Semantic network traffic analysis through projection and selection,Streamgraph,Сетевая безопасность,-,-,Анализ трафика сети,-
-16,Understanding the context of network traffic alerts,Matrix;Graph;Chart;HeatMap,Сетевая безопасность,-,-,Анализ и мониторинг инцидентов в IDS|Анализ географии атак|Анализ доменов,-
-17,Eventpad: Rapid malware analysis and reverse engineering using visual analytics,Matrix;Streamgraph,Вирусология,-,-,Анализ поведения вредоносного ПО,-
-18,User behavior map: Visual exploration for cyber security session data,Geographical maps;HeatMap;Parallel coordinates,Сетевая безопасность,-,-,Анализ географии атак,-
-19,An empirical study on perceptually masking privacy in graph visualizations,Graph,Социальные сети,-,-,Анализ социальных связей,-
-20,Toward a visualization-supported workflow for cyber alert management using threat models and human-centered design,Scatter plot,Сетевая безопасность,-,-,Анализ файлов,-
-22,V3SPA: A visual analysis exploration and diffing tool for SELinux and SEAndroid security policies,Graph;Matrix,Контроль доступа,-,-,Анализ политик (дискреционные),-
-23,Contextual network navigation to provide situational awareness for network administrators,Tree,Сетевая безопасность,-,-,Анализ и мониторинг инцидентов в IDS,-
-24,Ensemble visualization for cyber situation awareness of network security data,Matrix;Tree;Chart,Сетевая безопасность,-,-,Анализ и мониторинг инцидентов в IDS|Анализ трафика сети,-
-25,Firewall ruleset visualization analysis tool based on segmentation,Matrix,Контроль доступа,-,-,Анализ политик (дискреционные),-
-26,Visual Analytics for Root DNS Data,Streamgraph;Scatter plot,Сетевая безопасность,-,-,Анализ трафика сети,-
-27,Visualizing the insider threat: challenges and tools for identifying malicious user activity,Tree;Streamgraph;Chart;Matrix;Scatter plot;Parallel coordinates,Предотвращение утечек,-,-,Анализ активности сотрудника,-
-28,STARLORD: Linked security data exploration in a 3D graph,Graph,Сетевая безопасность,-,-,Анализ и мониторинг инцидентов в IDS,-
-31,Visualizing a Malware Distribution Network,Graph,Вирусология,-,-,Анализ поведения вредоносного ПО,-
-32,Visually guided flow tracking in software-defined networking,Tree;Parallel coordinates;Scatter plot,Сетевая безопасность,-,-,Анализ и мониторинг инцидентов в IDS|Анализ трафика сети,-
-33,Towards designing effective visualizations for DNS-based network threat analysis,Scatter plot,Сетевая безопасность,-,-,Анализ доменов,-
-34,Interactive visualization toolbox to detect sophisticated android malware,Graph,Вирусология,-,-,Анализ графа вызова функций,-
-36,Detecting malicious logins in enterprise networks using visualization,Graph,Сетевая безопасность,-,-,Анализ и мониторинг инцидентов в IDS,-
-37,Building a Machine Learning Model for the SOC by the Input from the SOC and Analyzing it for the SOC,Chart;Scatter plot;TreeMaps;Matrix,Анализ рисков,-,-,Ситуационная осведомленность,-
-38,Bigfoot: A geo-based visualization methodology for detecting BGP threats,Geographical maps,Криминалистика,-,-,Анализ логов,-
-40,Visual-Interactive Identification of Anomalous IP-Block Behavior Using Geo-IP Data,Geographical maps;Chart,Сетевая безопасность,-,-,Анализ географии атак|Анализ трафика сети,-
-42,Discovery of rating fraud with real-time streaming visual analytics,Matrix;Graph,FRA,-,-,Обнаружение мошенничества,-
-43,TAPESTRY: Visualizing Interwoven Identities for Trust Provenance,HeatMap;Chart,Сетевая безопасность,-,-,Анализ и мониторинг инцидентов в IDS,-
-44,Visual analytics for cyber red teaming,Graph;Tree;Parallel coordinates,Сетевая безопасность,-,-,Анализ и мониторинг инцидентов в IDS,-
+1,J-Viz: Finding algorithmic complexity attacks via graph visualization of Java bytecode,Graph,Вирусология,2016,10.1109/vizsec.2016.7739575,Анализ графа вызова функций,https://ieeexplore.ieee.org/document/7739575
+2,ROPMate: Visually Assisting the Creation of ROP-based Exploits,Tree;Scatter plot,Вирусология,2018,10.1109/VIZSEC.2018.8709204,Анализ графа вызова функций|Анализ метрик вредоносного ПО,https://ieeexplore.ieee.org/document/8709204
+3,The goods the bads and the uglies: Supporting decisions in malware detection through visual analytics,Geographical maps;HeatMap;Scatter plot,Сетевая безопасность,2017,10.1109/vizsec.2017.8062199,Анализ географии атак|Анализ файлов,https://ieeexplore.ieee.org/document/8062199
+4,CRUMBS: A cyber security framework browser,TreeMaps,Контроль доступа,2017,10.1109/vizsec.2017.8062194,Анализ политик (иерархические),https://ieeexplore.ieee.org/document/8062194/
+5,PERCIVAL: proactive and reactive attack and response assessment for cyber incidents using visual analytics,Graph,Сетевая безопасность,2015,10.1109/vizsec.2015.7312764,Анализ и мониторинг инцидентов в IDS,https://ieeexplore.ieee.org/document/7312764/
+6,Uncovering periodic network signals of cyber attacks,Chart,Сетевая безопасность,2016,10.1109/vizsec.2016.7739581,Анализ трафика сети,https://ieeexplore.ieee.org/document/7739581
+7,Crush Your Data with ViC 2 ES Then CHISSL Away,Matrix,Предотвращение утечек,2018,10.1109/VIZSEC.2018.8709212,Анализ активности сотрудника,https://ieeexplore.ieee.org/document/8709212
+8,Ocelot: user-centered design of a decision support visualization for network quarantine,Tree;Parallel coordinates,Сетевая безопасность,2015,10.1109/vizsec.2015.7312763,Анализ и мониторинг инцидентов в IDS,https://ieeexplore.ieee.org/document/7312763
+9,CyberPetri at CDX 2016: Real-time network situation awareness,Tree,Сетевая безопасность,2016,10.1109/vizsec.2016.7739584,Анализ и мониторинг инцидентов в IDS,https://ieeexplore.ieee.org/document/7739584
+10,Cesar: Visual representation of source code vulnerabilities,TreeMaps,Вирусология,2016,10.1109/vizsec.2016.7739576,Анализ уязвимостей,https://ieeexplore.ieee.org/abstract/document/7739576/footnotes
+11,Visualization of actionable knowledge to mitigate DRDoS attacks,Chart,Сетевая безопасность,2016,10.1109/vizsec.2016.7739577,Анализ трафика сети,https://ieeexplore.ieee.org/abstract/document/7739577/
+12,Looking for a black cat in a dark room: Security visualization for cyber-physical system design and analysis,Graph,Анализ рисков,2018,10.1109/VIZSEC.2018.8709187,Анализ активов,https://ieeexplore.ieee.org/document/8709187
+13,Bitconeview: visualization of flows in the bitcoin transaction graph,Chart,Криминалистика,2015,10.1109/vizsec.2015.7312773,Анализ транзакций,https://ieeexplore.ieee.org/document/7312773
+15,SNAPS: Semantic network traffic analysis through projection and selection,Streamgraph,Сетевая безопасность,2015,10.1109/vizsec.2015.7312768,Анализ трафика сети,https://ieeexplore.ieee.org/document/7312768
+16,Understanding the context of network traffic alerts,Matrix;Graph;Chart;HeatMap,Сетевая безопасность,2016,10.1109/vizsec.2016.7739579,Анализ и мониторинг инцидентов в IDS|Анализ географии атак|Анализ доменов,https://ieeexplore.ieee.org/document/7739579
+17,Eventpad: Rapid malware analysis and reverse engineering using visual analytics,Matrix;Streamgraph,Вирусология,2018,10.1109/VIZSEC.2018.8709230,Анализ поведения вредоносного ПО,https://ieeexplore.ieee.org/document/8709230
+18,User behavior map: Visual exploration for cyber security session data,Geographical maps;HeatMap;Parallel coordinates,Сетевая безопасность,2018,10.1109/VIZSEC.2018.8709223,Анализ географии атак,https://ieeexplore.ieee.org/document/8709223
+19,An empirical study on perceptually masking privacy in graph visualizations,Graph,Социальные сети,2018,10.1109/VIZSEC.2018.8709181,Анализ социальных связей,https://ieeexplore.ieee.org/document/8709181
+20,Toward a visualization-supported workflow for cyber alert management using threat models and human-centered design,Scatter plot,Сетевая безопасность,2017,10.1109/vizsec.2017.8062200,Анализ файлов,https://ieeexplore.ieee.org/document/8062200
+22,V3SPA: A visual analysis exploration and diffing tool for SELinux and SEAndroid security policies,Graph;Matrix,Контроль доступа,2016,10.1109/vizsec.2016.7739580,Анализ политик (дискреционные),https://ieeexplore.ieee.org/document/7739580
+23,Contextual network navigation to provide situational awareness for network administrators,Tree,Сетевая безопасность,2015,10.1109/vizsec.2015.7312769,Анализ и мониторинг инцидентов в IDS,https://ieeexplore.ieee.org/document/7312769
+24,Ensemble visualization for cyber situation awareness of network security data,Matrix;Tree;Chart,Сетевая безопасность,2015,10.1109/vizsec.2015.7312766,Анализ и мониторинг инцидентов в IDS|Анализ трафика сети,https://ieeexplore.ieee.org/abstract/document/7312766
+25,Firewall ruleset visualization analysis tool based on segmentation,Matrix,Контроль доступа,2017,10.1109/vizsec.2017.8062196,Анализ политик (дискреционные),https://ieeexplore.ieee.org/document/8062196
+26,Visual Analytics for Root DNS Data,Streamgraph;Scatter plot,Сетевая безопасность,2018,10.1109/VIZSEC.2018.8709205,Анализ трафика сети,https://ieeexplore.ieee.org/document/8709205
+27,Visualizing the insider threat: challenges and tools for identifying malicious user activity,Tree;Streamgraph;Chart;Matrix;Scatter plot;Parallel coordinates,Предотвращение утечек,2015,10.1109/vizsec.2015.7312772,Анализ активности сотрудника,https://ieeexplore.ieee.org/document/7312772
+28,STARLORD: Linked security data exploration in a 3D graph,Graph,Сетевая безопасность,2017,10.1109/vizsec.2017.8062203,Анализ и мониторинг инцидентов в IDS,https://ieeexplore.ieee.org/document/8062203
+31,Visualizing a Malware Distribution Network,Graph,Вирусология,2016,10.1109/vizsec.2016.7739585,Анализ поведения вредоносного ПО,https://ieeexplore.ieee.org/document/7739585
+32,Visually guided flow tracking in software-defined networking,Tree;Parallel coordinates;Scatter plot,Сетевая безопасность,2016,10.1109/vizsec.2016.7739586,Анализ и мониторинг инцидентов в IDS|Анализ трафика сети,https://ieeexplore.ieee.org/document/7739586
+33,Towards designing effective visualizations for DNS-based network threat analysis,Scatter plot,Сетевая безопасность,2017,10.1109/vizsec.2017.8062201,Анализ доменов,https://ieeexplore.ieee.org/document/8062201
+34,Interactive visualization toolbox to detect sophisticated android malware,Graph,Вирусология,2017,10.1109/vizsec.2017.8062197,Анализ графа вызова функций,https://ieeexplore.ieee.org/document/8062197
+36,Detecting malicious logins in enterprise networks using visualization,Graph,Сетевая безопасность,2016,10.1109/vizsec.2016.7739582,Анализ и мониторинг инцидентов в IDS,https://ieeexplore.ieee.org/document/7739582
+37,Building a Machine Learning Model for the SOC by the Input from the SOC and Analyzing it for the SOC,Chart;Scatter plot;TreeMaps;Matrix,Анализ рисков,2018,10.1109/VIZSEC.2018.8709231,Ситуационная осведомленность,https://ieeexplore.ieee.org/document/8709231
+38,Bigfoot: A geo-based visualization methodology for detecting BGP threats,Geographical maps,Криминалистика,2016,10.1109/vizsec.2016.7739583,Анализ логов,https://ieeexplore.ieee.org/document/7739583/
+40,Visual-Interactive Identification of Anomalous IP-Block Behavior Using Geo-IP Data,Geographical maps;Chart,Сетевая безопасность,2018,10.1109/VIZSEC.2018.8709182,Анализ географии атак|Анализ трафика сети,https://ieeexplore.ieee.org/document/8709182
+42,Discovery of rating fraud with real-time streaming visual analytics,Matrix;Graph,FRA,2015,10.1109/vizsec.2015.7312770,Обнаружение мошенничества,https://ieeexplore.ieee.org/document/7312770
+43,TAPESTRY: Visualizing Interwoven Identities for Trust Provenance,HeatMap;Chart,Сетевая безопасность,2018,10.1109/VIZSEC.2018.8709236,Анализ и мониторинг инцидентов в IDS,https://ieeexplore.ieee.org/document/8709236
+44,Visual analytics for cyber red teaming,Graph;Tree;Parallel coordinates,Сетевая безопасность,2015,10.1109/vizsec.2015.7312765,Анализ и мониторинг инцидентов в IDS,https://ieeexplore.ieee.org/document/7312765
