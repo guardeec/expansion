@@ -86,11 +86,17 @@ function draw(){
                     nodesToConnect = graph.nodes.filter(node=>node[type].includes(el));
                     for (let s=0; s<nodesToConnect.length-1; s++){
                         for (let t=1; t<nodesToConnect.length; t++){
-                            graph.links.push({
-                                source: nodesToConnect[s].id,
-                                target: nodesToConnect[t].id,
-                                type: type
-                            });
+                            if(graph.links.filter(link=>
+                                (link.source===nodesToConnect[s].id && link.target===nodesToConnect[t].id)
+                                ||
+                                (link.target===nodesToConnect[s].id && link.source===nodesToConnect[t].id)
+                            ).length===0){
+                                graph.links.push({
+                                    source: nodesToConnect[s].id,
+                                    target: nodesToConnect[t].id,
+                                    type: type
+                                });
+                            }
                         }
                     }
                 })
@@ -144,8 +150,8 @@ function draw(){
             var nodeImages = node.append("g")
             nodeImages.append('rect')
                 .attr('class', 'image-border')
-                .attr("x", function(d) { return nodesSize/2*-1;})
-                .attr("y", function(d) { return nodesSize/2*-1;})
+                .attr("x", function() { return nodesSize/2*-1;})
+                .attr("y", function() { return nodesSize/2*-1;})
                 .attr('width', nodesSize)
                 .attr('height', nodesSize)
                 .attr("stroke", "black")
@@ -155,8 +161,8 @@ function draw(){
                     return "figures/"+d.id+".png"
                     //return "figures/"+d.id+".png"
                 })
-                .attr("x", function(d) { return nodesSize/2*-1;})
-                .attr("y", function(d) { return nodesSize/2*-1;})
+                .attr("x", function() { return nodesSize/2*-1;})
+                .attr("y", function() { return nodesSize/2*-1;})
                 .attr("height", nodesSize)
                 .attr("width", nodesSize)
                 ////////////////////////////////////
@@ -170,19 +176,20 @@ function draw(){
                 })
                 .on('mouseout', function (node) {
                     tip.hide(node);
-                    svg.selectAll(".lines").attr("stroke-opacity", function (link) {
+                    svg.selectAll(".lines").attr("stroke-opacity", function () {
                         return 0
                     })
                 })
                 ////////////////////////////////////
                 //////////////////////////////////////////////MAKE DETAILS ON DEMAND
                 .on('click',function (d) {
-                    $("#articleInfo").empty();
-                    $("#articleInfo").html(
+                    let articleInfo = $("#articleInfo");
+                    articleInfo.empty();
+                    articleInfo.html(
                         "<div class='row'>"+
                         "<div style='text-align: center; padding-bottom: 20px'><strong style='font-size: 120%'>Публикация:</strong> <span style='color:cadetblue;font-size: 120%'>" + d.name + "</span> </div>" +
                         "<div class='columnLeft'>" +
-                        "<img width='100%' border='1'  src='figures/"+d.id+".png' alt='"+d.name+"'>"+
+                        "<img width='100%'  src='figures/"+d.id+".png' alt='"+d.name+"'>"+
                         "</div>"+
                         "<div class='columnRight'>" +
                         "<div style='padding-left: 20px; padding-top: 10px'><strong>Модели:</strong> <span style='color:cadetblue'>" + modelUnmap(d.model) + "</span></div>" +
