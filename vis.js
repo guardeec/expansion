@@ -21,7 +21,7 @@ function draw(){
             //UNITE DATA
             refs = refs.split("\n").filter(r=>r.length>0)
             data = data.map(d=>{
-                d.ref = refs[refs.indexOf("\\bibitem{ref-" + d.id + "}") + 1].replace("\\emph{", "").split('~').join("")
+                d.ref = refs[refs.indexOf("\\bibitem{ref-" + d.id + "}") + 1].replace("\\emph{", "").split('~').join(" ")
                 return d;
             });
 
@@ -37,14 +37,14 @@ function draw(){
             function filter(data, type){
                 return data.filter(d=>{
                     let selected = $("#select"+type).children("option:selected").val();
-                    if(selected==="Все") return true
+                    if(selected==="���") return true
                     return d[type].includes(selected);
                 })
             }
             data = filter(data, "model")
             data = filter(data, "area")
             data = filter(data, "task")
-            data = data.filter(d=>d.ref.includes($("#selecttag").val()))
+            data = data.filter(d=>d.ref.toLowerCase().includes($("#selecttag").val().toLowerCase()))
             data = data.filter(d=>d.year>=range.value)
 
 
@@ -121,10 +121,10 @@ function draw(){
                 .offset([-10, 0])
                 .html(function(d) {
                     console.log(d)
-                    return "<strong>Публикация:</strong> <span style='color:cadetblue'>" + d.name + "</span> " +
-                        "<div><strong>Модели:</strong> <span style='color:cadetblue'>" + modelUnmap(d.model) + "</span></div>" +
-                        "<div><strong>Область:</strong> <span style='color:cadetblue'>" + d.area + "</span></div>" +
-                        "<strong>Задача:</strong> <span style='color:cadetblue'>" + d.task + "</span>"
+                    return "<strong>����������:</strong> <span style='color:cadetblue'>" + d.name + "</span> " +
+                        "<div><strong>������:</strong> <span style='color:cadetblue'>" + modelUnmap(d.model) + "</span></div>" +
+                        "<div><strong>�������:</strong> <span style='color:cadetblue'>" + d.area + "</span></div>" +
+                        "<strong>������:</strong> <span style='color:cadetblue'>" + d.task + "</span>"
                 })
             svg.call(tip);
 
@@ -187,15 +187,15 @@ function draw(){
                     articleInfo.empty();
                     articleInfo.html(
                         "<div class='row'>"+
-                        "<div style='text-align: center; padding-bottom: 20px'><strong style='font-size: 120%'>Публикация:</strong> <span style='color:cadetblue;font-size: 120%'>" + d.name + "</span> </div>" +
+                        "<div style='text-align: center; padding-bottom: 20px'><strong style='font-size: 120%'>����������:</strong> <span style='color:cadetblue;font-size: 120%'>" + d.name + "</span> </div>" +
                         "<div class='columnLeft'>" +
                         "<img width='100%'  src='figures/"+d.id+".png' alt='"+d.name+"'>"+
                         "</div>"+
                         "<div class='columnRight'>" +
-                        "<div style='padding-left: 20px; padding-top: 10px'><strong>Модели:</strong> <span style='color:cadetblue'>" + modelUnmap(d.model) + "</span></div>" +
-                        "<div style='padding-left: 20px'><strong>Область:</strong> <span style='color:cadetblue'>" + d.area + "</span></div>"+
-                        "<div style='padding-left: 20px'><strong>Задача:</strong> <span style='color:cadetblue'>" + d.task + "</span></div>" +
-                        "<div style='padding-left: 20px'><strong>Год:</strong> <span style='color:cadetblue'>" + d.year + "</span></div>" +
+                        "<div style='padding-left: 20px; padding-top: 10px'><strong>������:</strong> <span style='color:cadetblue'>" + modelUnmap(d.model) + "</span></div>" +
+                        "<div style='padding-left: 20px'><strong>�������:</strong> <span style='color:cadetblue'>" + d.area + "</span></div>"+
+                        "<div style='padding-left: 20px'><strong>������:</strong> <span style='color:cadetblue'>" + d.task + "</span></div>" +
+                        "<div style='padding-left: 20px'><strong>���:</strong> <span style='color:cadetblue'>" + d.year + "</span></div>" +
                         "<div style='padding-left: 20px; padding-top: 10px'><strong>DOI:</strong> <span style='color:cadetblue'>" + d.doi + "</span></div>" +
                         "<div style='padding-left: 20px; padding-top: 25px; '><i><span style='color: cadetblue'>"+d.ref.split("}")[0]+" </span>"+d.ref.split("}")[1]+"</i></div>" +
                         "<div style='text-align: center; padding-top: 10px'>" +
@@ -212,23 +212,7 @@ function draw(){
 
             //WILL BE REMOVED
             function modelUnmap(short){
-                function unmap(name) {
-                    switch (name) {
-                        case "Graph": return "Граф";
-                        case "TreeMap": return "Карта деревьев";
-                        case "Matrix": return "Матрица";
-                        case "Tree": return "Дерево";
-                        case "Chart": return "Простейшний график";
-                        case "Parallel coordinates": return "Параллельные коррдинаты";
-                        case "Scatter plot": return "График рассеивания";
-                        case "Chord Diagram": return "Хордовая диаграмма";
-                        case "Word cloud": return "Облако слов";
-                        case "Geographical maps": return "Гео-карта";
-                        case "HeatMap": return "Тепловая карта";
-                        case "Streamgraph": return "График потока";
-                    }
-                }
-                return  short.map(unmap);
+				return short;
             }
 
             //START FORCE

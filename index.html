@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="windows-1251">
     <title>Security visualization map</title>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="tip/d3-tip.js"></script>
@@ -41,8 +41,8 @@
         font-family: Arial;
     }
     .brd {
-        border: 1px solid black; /* РџР°СЂР°РјРµС‚СЂС‹ РіСЂР°РЅРёС†С‹ */
-        padding: 10px; /* РџРѕР»СЏ РІРѕРєСЂСѓРі С‚РµРєСЃС‚Р° */
+        border: 1px solid black; /* Параметры границы */
+        padding: 10px; /* Поля вокруг текста */
     }
     .panelContent{
         padding-top: 10px;
@@ -52,7 +52,7 @@
 </style>
 <body style="font-family: Arial;">
 <div class="header" >
-    <h1>ComSec Lab - РљР°СЂС‚Р° РјРµС‚РѕРґРѕРІ РІРёР·СѓР°Р»РёР·Р°С†РёРё РР‘</h1>
+    <h1>ComSec Lab - Карта методов визуализации ИБ</h1>
 </div>
 
 <div style="padding-top: 5px"></div>
@@ -61,12 +61,12 @@
     <!-- LEFT PANEL -->
     <div class="panel brd">
         <!-- NODES FILTERS -->
-        <div class="panelContent"><span>РљР»СЋС‡РµРІРѕРµ СЃР»РѕРІРѕ:</span> <input style="float: right" type="text" id="selecttag" name="tag" onchange="onChange()"></div>
-        <div class="panelContent"><span>РњРѕРґРµР»СЊ:<select id="selectmodel" style="float: right" onchange="onChange()"><option>Р’СЃРµ</option></select></span></div>
-        <div class="panelContent"><span>РћР±Р»Р°СЃС‚СЊ:<select id="selectarea" style="float: right" onchange="onChange()"><option>Р’СЃРµ</option></select></span></div>
-        <div class="panelContent"><span>Р—Р°РґР°С‡Р°:<select id="selecttask" style="float: right" onchange="onChange()"><option>Р’СЃРµ</option></select></span></div>
+        <div class="panelContent"><span>Ключевое слово:</span> <input style="float: right" type="text" id="selecttag" name="tag" onchange="onChange()"></div>
+        <div class="panelContent"><span>Модель:<select id="selectmodel" style="float: right" onchange="onChange()"><option>Все</option></select></span></div>
+        <div class="panelContent"><span>Область:<select id="selectarea" style="float: right" onchange="onChange()"><option>Все</option></select></span></div>
+        <div class="panelContent"><span>Задача:<select id="selecttask" style="float: right" onchange="onChange()"><option>Все</option></select></span></div>
         <div class="panelContent">
-            <span>Р“РѕРґ:</span>
+            <span>Год:</span>
             <div class="range-wrap"  style="float: right">
                 <div class="range-value" id="rangeV"></div>
                 <input id="range" type="range" min="2000" max="2020" value="2000" step="1" onchange="onChange()">
@@ -87,16 +87,16 @@
         </div>
 
         <!-- LINK FILTERS -->
-        <div class="panelContent" style="padding-top: 100px">РџРѕРєР°Р·Р°С‚СЊ СЃРІСЏР·Рё:</div>
+        <div class="panelContent" style="padding-top: 100px">Показать связи:</div>
         <input type="checkbox" class="panelContent" id="linksmodel" name="model" onchange="onChange()" checked>
-        <label for="linksmodel">РњРѕРґРµР»СЊ</label>
+        <label for="linksmodel">Модель</label>
         <input type="checkbox" class="panelContent" id="linksarea" name="area" onchange="onChange()" checked>
-        <label for="linksarea">РћР±Р»Р°СЃС‚СЊ</label>
+        <label for="linksarea">Область</label>
         <input type="checkbox" class="panelContent" id="linkstask" name="task" onchange="onChange()" checked>
-        <label for="linkstask">Р—Р°РґР°С‡Р°</label>
+        <label for="linkstask">Задача</label>
 
         <!-- OTHER -->
-        <div class="panelContent" style="padding-top: 100px">Р”Р»СЏ СЃРІСЏР·Рё: kolomeec@comsec.spb.ru</div>
+        <div class="panelContent" style="padding-top: 100px">Для связи: <a href="mailto:kolomeec@comsec.spb.ru">kolomeec@comsec.spb.ru</a></div>
     </div>
 
     <!-- RIGHT PANEL -->
